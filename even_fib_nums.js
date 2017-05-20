@@ -10,6 +10,12 @@ function _sumFibs( maxFibValue ) {
 
   // do your work here
 
+  for (var i = 0; i <= maxFibValue; i++) {
+    if (i % 2 === 0) {
+      sum = i - 2;
+    }
+  }
+
   return sum;
 }
 
@@ -31,5 +37,5 @@ function _highestFibonacciNumber (maxFibValue){
  */
 module.exports = {
   sumFibs : _sumFibs,
-  highestFibonacciNumber : _highestFibonacciNumber
+  highestFibonacciNumber : null
 };
